@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: Poppins;
+}
+body{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background:url(images/bg-intro-desktop.png), #FF7979;   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.container{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;    
+    margin-bottom: 1.2em;
+}
+section.intro{
+    width: 525px;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+h1{  
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px; /* 110% */
+    letter-spacing: -0.521px;
+}
+section.intro p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: inherit;
+}
+section.right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 540px;
+}
+div.trial{
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 10px;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+div.trial p{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 0.268px;
+}
+.faint{
+   font-weight: 100;
+}
+div.form-container{
+    padding: 1.3em;
+    background-color: white;
+    width: 540px;
+    height: 474px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+}
+input{
+    padding: 0.8em;
+    width: 460px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s ease;
+}  
+::-webkit-input-placeholder, input{
+    color: #3D3B48;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: 0.25px;
+}
+::-webkit-input-placeholder{
+    opacity: 0.75;
+}
+input:focus, input:hover{
+    border-radius: 5px;
+    outline: 1px solid #5E54A4;
+    background: #FFF;
+}
+button{
+    width: 460px;
+    height: 56px;
+    flex-shrink: 0;
+    padding: 0.8em;
+
+    border-radius: 5px;
+    background: #38CC8B;
+    border: transparent;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 173.333% */
+    letter-spacing: 1px;
+}
+button:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background: #77E2B3;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+}
+p.terms{
+    color: #BAB7D4;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 236.364% */
+}
+.red{
+    color: #FF7979;
+    font-style: normal;
+    font-weight: 700;
+}
+.pop_up{
+    color: #FF7979;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+.error-image{
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}
+.error{
+    border: 2px solid #FF7979;
+    float: right;
+} 
+.pop_up{
+    float: right;
+}
+.hidden{
+ visibility: hidden;
+}
+
+@media (max-width:375px) {
+    body{
+        width: 100vw;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        gap: 1.8em;
+        margin-bottom: 0.7em;
+    }
+    section.intro{
+        width: 327px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    h1{
+        align-self: center;
+        width: 327px;
+        font-size: 28px;
+        height: 80px;
+        line-height: 36px;
+        letter-spacing: -0.292px;
+    }
+    section.right{
+        width: 327px;
+    }
+    div.trial p{
+        width: 194px;
+        margin: 0 auto;
+    }
+    div.form-container{
+        width: 327px;
+        height: 442px;
+        padding: 0.7em;
+    }
+    form{
+        gap: 0.5em;
+    }
+    input, button{
+        width: 279px;
+    }
+    p.terms{
+        width: 249px;
+    }
+}
